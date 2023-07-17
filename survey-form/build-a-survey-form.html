@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <mata charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="styles-survey-form.css">
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Enter your name" class="input-class" required></label>
+        <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter your Email" class="input-class" required></label>
+        <label for="number" id="number-label">Age (optional) <input id="number" type="number" placeholder="Age" class="input-class" min="10" max="120"></label>
+        <p>Which option best describes your current role?</p>
+      <select id="dropdown">
+        <option>Select current role</option>
+        <option>Student</option>
+        <option>Full Time Job</option>
+        <option>Full Time Learner</option>
+        <option>Prefer Not to say</option>
+        <option>Other</option>
+      </select>
+      </fieldset>
+
+
+      <fieldset>
+        <p>Whould you recommend freeCodeCamp to a friend?</p>
+        <label><input type="radio" name="radio-b" value="Radio"> Definitely</label>
+        <label><input type="radio" name="radio-b" value="Radio"> Maybe</label>
+        <label><input type="radio" name="radio-b" value="Radio"> Not sure
+      </fieldset>
+
+
+      <fieldset>
+        <p>What is your favorite feature of freeCodeCamp?</p>
+        <select>
+          <option>Select an option</option>
+          <option>Challenges</option>
+          <option>Projects</option>
+          <option>Community</option>
+          <option>Open Source</option>
+        </select>
+
+
+      </fieldset>
+      <fieldset>
+        <p>What would you like to see improved? <font size=" 3px">(Check all that apply)</font></p>
+        <label><input type="checkbox" value="Checkbox"> Front-end Projects
+        </label>
+        <label><input type="checkbox" value="Checkbox"> Back-end Projects
+        </label>
+        <label><input type="checkbox" value="Checkbox" > Data Visualization
+        </label>
+        <label><input type="checkbox" value="Checkbox"> Challenges
+        </label>
+        <label><input type="checkbox" value="Checkbox"> Open Source Community
+        </label>
+        <label><input type="checkbox" value="Checkbox"> Gitter help rooms
+        </label>
+        <label><input type="checkbox" value="Checkbox"> Videos
+        </label>
+        <label><input type="checkbox" value="Checkbox"> City Meetups
+        </label>
+        <label><input type="checkbox" value="Checkbox"> Wiki
+        </label>
+        <label><input type="checkbox" value="Checkbox"> Forum
+        </label>
+        <label><input type="checkbox" value="Checkbox"> Additional Courses
+        </label>
+      </fieldset>
+
+      
+      <fieldset>
+        <label>Any comments or suggestions?
+          <textarea placeholder="Enter your comment here..." rows="7"></textarea>
+        </label>
+      </fieldset>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
